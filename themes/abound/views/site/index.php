@@ -42,6 +42,7 @@ foreach (range(0, 3) as $key => $value) {
 </style>
 
 
+
 <div class="row">
     <div style="margin: 5px 50px" class='campaign-card-container'>
     <h1>Campaigns</h1>
@@ -79,6 +80,9 @@ foreach (range(0, 3) as $key => $value) {
                 </h4>
                 <hr>
                 <?php echo CHtml::link('More Details >>', array('/campaign/'.$value['campaign_name']), array('class'=>'btn btn-default btn-block')); ?>
+                <br>
+                <?php echo CHtml::link('Start', array('/campaign/'.$value['campaign_name']), array('class'=>'btn btn-success btn-block')); ?>
+                <?php echo CHtml::link('Stop', array('/campaign/'.$value['campaign_name']), array('class'=>'btn btn-danger btn-block')); ?>
             <?php
                 $this->endWidget();
             ?>
