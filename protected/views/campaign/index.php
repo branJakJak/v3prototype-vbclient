@@ -96,7 +96,7 @@ foreach (range(0, 12) as $key => $value) {
             ?>
                 <?php echo CHtml::beginForm(array('/requestForm/index'), 'POST',array('class'=>'well')); ?>
                     <h1>Request Form</h1>
-                    <hr>
+                    
                     <?php echo CHtml::hiddenField('clientUpload', 'clientUpload'); ?>
                     <?php echo CHtml::hiddenField('fileName', null, array('id'=>'fileName')); ?>
                     <label>Upload the mobile numbers</label>
